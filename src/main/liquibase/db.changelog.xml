@@ -10,4 +10,20 @@
 			stripComments="true" />
 	</changeSet>
 
+	<changeSet id="5" author="bob">
+		<rollback>
+			<dropTable tableName="usuario" />
+		</rollback>
+	</changeSet>
+
+	<changeSet id="6" author="nvoxland">
+		<sqlFile path="src/main/liquibase/changelog/3.sql"
+			stripComments="true" />
+	</changeSet>
+	
+	<changeSet id="8" author="admin">
+		<sqlFile path="src/main/liquibase/changelog/8.sql"
+			stripComments="true" />
+	</changeSet>
+
 </databaseChangeLog>	
